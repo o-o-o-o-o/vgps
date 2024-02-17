@@ -12,12 +12,26 @@
     <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js"></script>
   </head>
   <style>
+    @font-face {
+      font-family: "ItalianOldstyle";
+      src: url("fonts/OPTIItalianOldstyle-Bold.woff2") format("woff2"),
+        url("fonts/OPTIItalianOldstyle-Bold.woff") format("woff");
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+
     body,
     html {
+      font-family: "ItalianOldstyle";
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden;
+      /* overflow: hidden; */
+    }
+
+    .bg-grey {
+      background-color: #969696;
     }
 
     .video-container {
@@ -35,14 +49,205 @@
       width: 100%;
       height: 100%;
     }
+
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+      .frosted {
+        background: rgba(19, 17, 17, 0.01);
+        -webkit-backdrop-filter: saturate(180%) blur(100px);
+        backdrop-filter: saturate(180%) blur(100px);
+      }
+    }
+
+    div#about {
+      columns: 3;
+      gap: 4rem;
+    }
+
+    div#about p {
+      line-height: 1.3;
+      letter-spacing: 0.01em;
+    }
+    .col-break {
+      break-before: column;
+    }
+
+    .num-indent {
+      text-indent: -1em;
+    }
   </style>
   <body>
     <div
-      data-interact
-      class="ma3 near-white f1 system-sans-serif"
-      contenteditable="true"
+      class="pa3 near-white f1 vw-100 vh-100 flex items-center justify-around ttu"
     >
-      Varese Group Pamphlet Series
+      <div>Varese</div>
+      <div>Group</div>
+      <div>Pamphlet</div>
+      <div>Series</div>
+    </div>
+    <div class="vh-100 vw-100 bg-grey pa5 near-white flex items-center">
+      <div>
+        <div class="ml5">
+          <p>Release 1</p>
+          Left to Right, <br />
+          Leslie Dick: Voluptuous Panic / Digital Whirlpool / Digital Panic /
+          Voluptuous Whirlpool; Michael Ned Holte: Bog Time; Warren Olds: ESC*
+        </div>
+        <div class="flex flex-wrap-ns justify-around mt5">
+          <div class="w-25-ns w-100 mh3">
+            <img src="imgs/voluptuouspanic.png" alt="" />
+          </div>
+          <div class="w-25 mh3"><img src="imgs/mill.png" alt="" /></div>
+          <div class="w-25 mh3"><img src="imgs/asterisk.png" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <div id="about" class="frosted min-vh-100 vw-100 pa4 near-white">
+      <div>
+        <p class="mt0 ml4 ttu">Varese Group Pamphlet Series</p>
+        <p>
+          <span
+            >Varese Group convened for the first time in 2017 when Fiona Connor
+            invited a small group of artists, writers, architects, curators, and
+            designers to meet in northern Italy, with a gentle commitment to
+            keep coming back in the following years. For three consecutive
+            summers we spent a full, unhurried week together, with each
+            participant gently taking responsibility for an event or
+            presentation: giving a talk or slide show, presenting artwork,
+            leading a field trip. Common interests included a fascination with
+            place, site, and temporality; a commitment to institutional
+            critique; and a desire to delve into the histories of architecture
+            and exhibition design. The materiality of a specific location was
+            central to these concerns. We made food together, went on long
+            walks, and discovered overlapping interests and intersecting
+            histories. We made new friends and indulged old ones; certain
+            individuals fell in love; coincidences unfolded. One year a baby
+            attended, and we all discovered the meaning of tummy time. The
+            participants came from Los Angeles, Auckland, Berlin, New York,
+            Lisbon, Glasgow, various cities in Italy, and elsewhere. In time, a
+            series of programs took place in Los Angeles, and during the
+            pandemic, a fourth iteration of Varese Group came together remotely,
+            with old and new participants spanning multiple countries and time
+            zones.</span
+          >
+        </p>
+        <p>
+          <span
+            >The Varese Group Pamphlet Series was initiated as a way for the
+            group to share threads of research and output with a broader public.
+            Pamphlets are published in series, with the first set of three by
+            Leslie Dick, Michael Ned Holte, and Warren Olds, [to be?] followed
+            by a second set by Marta Fontolan, Sasha Portis, and Lucy
+            Skaer.</span
+          >
+        </p>
+
+        <p>
+          <span
+            >The pamphlets are Risograph-printed in black on 70 lb. White Cougar
+            paper, and staple-bound in quarto signatures.
+          </span>
+        </p>
+      </div>
+      <div class="col-break">
+        <p class="mt0 ml4 ttu">Now Available</p>
+        <p class="num-indent">
+          <strong
+            ><span
+              >1. Leslie Dick: Voluptuous Panic / Digital Whirlpool / Digital
+              Panic / Voluptuous Whirlpool</span
+            ></strong
+          >
+        </p>
+        <p class="ml4">
+          <em><span>Voluptuous Panic/Digital Whirlpool</span></em
+          ><span>
+            engages the work of Roger Caillois (1913-1978), in particular his
+            extraordinary essay on mimicry, first published in the Surrealist
+            journal </span
+          ><em><span>Minotaure</span></em
+          ><span>
+            in 1935, where Caillois argues that insects and other animals who
+            practice camouflage are not primarily motivated by a wish to
+            survive. Whether through imitating less vulnerable creatures (such
+            as butterflies with wings patterned in shapes that resemble large
+            eyes) or disappearing into their environment to the point of
+            invisibility, Caillois sees such mimicry as a luxury, even </span
+          ><em><span>a dangerous luxury</span></em
+          ><span
+            >, invoking the compulsive pleasures that accompany the dissolving
+            of distinctions between self and other. Ignoring Darwin’s theory of
+            evolution, this poetic proposition implicitly links mimicry to
+            Freud’s idea of the death drive. In his later writing on play and
+            games, Caillois outlined four fundamental structures of play that
+            may prove useful in thinking about other human practices, such as
+            art. In particular, his description of the delights of
+            disorientation, such as children spinning in circles or the
+            experience of thrill rides at the fair, recalls our contemporary
+            experience within the digital realm, where the erasure of distinct
+            boundaries and locations imparts an echo of our eventual demise. 16
+            pages.</span
+          >
+        </p>
+        <p>
+          <strong><span>2. Michael Ned Holte: Bog Time </span></strong>
+        </p>
+        <p class="ml4">
+          <em><span>Bog Time</span></em
+          ><span>
+            considers the electronic music of Pauline Oliveros circa 1966-67,
+            coinciding with her time as the inaugural director of the Tape Music
+            Center at Mills College in Oakland, California. An inventor of
+            pioneering tape delay techniques, Oliveros began to explore the
+            possibilities of the Buchla synthesizer in the electronic music
+            studio at Mills, with the window open to the “bog”–really, a pond–
+            below. Soon after, she presented a 12-hour “Tape-athon” before
+            leaving Mills and the Bay Area for a teaching position at UC San
+            Diego. In this new context, she would develop her influential “Sonic
+            Meditations” and the mandala-based scores that are the foundation of
+            her eventual Deep Listening philosophy. This pamphlet focuses
+            attention on an important moment of transition for Oliveros, both
+            personally and musically. Drawings by Ruoyi Shi. 32 pages.
+          </span>
+        </p>
+        <p>
+          <strong><span>3. Warren Olds: ESC</span><span>*</span></strong>
+        </p>
+        <p class="ml4">
+          <span
+            >Bob Bemer invented Y2K. In his work as a computer scientist he also
+            proposed the escape (ESC) character be included in the new ASCII
+            standard when it was developed in 1960 to help standardize
+            electronic communications. In modern keyboard-use the ESC key is
+            generally mapped to some form of interrupt: no, quit, cancel, stop,
+            or abort. In 1960 computer interfaces were still keyboard-only and
+            Bemer formalized the idea that an escape key could signal a switch
+            of modes, from language to instruction – that subsequent characters
+            entered were to be interpreted and not displayed. It allowed for an
+            expansion of the alphabet present on the keyboard, giving space for
+            individual letters to also embody actions. *ESC** reproduces a
+            selection of asterisk forms cut from medium-density fibreboard (MDF)
+            and printed (on paper) by participants at an April 11, 2021 Varese
+            Group workshop in Oratia, Aotearoa New Zealand. These works
+            illustrate a short text by Olds exploring the magic of the asterisk
+            and some of its contemporary applications. 16 pages.</span
+          >
+        </p>
+      </div>
+      <div class="col-break">
+        <p class="mv0">
+          <span>Series editors: Fiona Connor, Michael Ned Holte</span>
+        </p>
+        <p class="mv0">
+          <span>Copy editors: Leslie Dick, Gwynneth Porter</span>
+        </p>
+        <p class="mv0"><span>Design: Warren Olds</span></p>
+        <p class="mv0"><span>Print: Neko Natalia</span></p>
+        <p class="mv0">
+          <span
+            >Published by June 20th, Los Angeles and Ōtautahi Christchurch</span
+          >
+        </p>
+      </div>
     </div>
     <div class="video-container">
       <video id="background-video" autoplay muted loop>
@@ -51,95 +256,4 @@
       </video>
     </div>
   </body>
-
-  <script>
-    /*
-prompts
-Create an HTML element that initially appears as a draggable square.
-Enable dragging the element to move its position using the transform property and the translate() function.
-Implement the ability to rotate the element by 90 degrees when it's double-clicked.
-Ensure that dragging the element does not reset its rotation.
-*/
-
-    const element = document.querySelector("[data-interact]");
-    let isDragging = false;
-    let startX, startY;
-    let startTranslateX, startTranslateY;
-    let rotation = 0; // Store rotation separately
-
-    element.addEventListener("mousedown", (e) => {
-      if (e.detail === 2) {
-        rotateElementBy90Degrees();
-      } else {
-        isDragging = true;
-        startX = e.clientX;
-        startY = e.clientY;
-        const style = window.getComputedStyle(element);
-        const transform = new DOMMatrix(style.transform);
-        startTranslateX = transform.e;
-        startTranslateY = transform.f;
-        element.style.cursor = "grabbing";
-      }
-    });
-
-    document.addEventListener("mousemove", (e) => {
-      if (isDragging) {
-        const offsetX = e.clientX - startX;
-        const offsetY = e.clientY - startY;
-
-        element.style.transform = `translate(${startTranslateX + offsetX}px, ${
-          startTranslateY + offsetY
-        }px) rotate(${rotation}deg)`;
-      }
-    });
-
-    document.addEventListener("mouseup", () => {
-      isDragging = false;
-      element.style.cursor = "grab";
-    });
-
-    function rotateElementBy90Degrees() {
-      rotation += 90;
-      element.style.transform = `translate(${startTranslateX}px, ${startTranslateY}px) rotate(${rotation}deg)`;
-    }
-  </script>
-  <script>
-    //uses interact.js
-    // // Get the element you want to make draggable and rotatable
-    // const element = document.querySelector("[data-interact]");
-    // let rotation = 0; // Initial rotation angle
-
-    // //click to rotate
-    // // Handle rotation on click
-    // element.addEventListener("dblclick", () => {
-    //   rotation = (rotation + 90) % 360; // Rotate by 90 degrees in increments
-    //   element.style.transform = `rotate(${rotation}deg)`;
-    //   element.style.transformOrigin = "center center";
-    // });
-
-    // // Enable drag and drop functionality
-    // interact(element).draggable({
-    //   onmove: (event) => {
-    //     const target = event.target;
-    //     const x = (parseFloat(target.getAttribute("data-x")) || 0) + event.dx;
-    //     const y = (parseFloat(target.getAttribute("data-y")) || 0) + event.dy;
-
-    //     target.style.transform = `translate(${x}px, ${y}px)`;
-    //     target.setAttribute("data-x", x);
-    //     target.setAttribute("data-y", y);
-    //   },
-    // });
-
-    // // Enable rotation functionality
-    // interact(element).gesturable({
-    //   onmove: (event) => {
-    //     const target = event.target;
-    //     const rotation =
-    //       (parseFloat(target.getAttribute("data-rotation")) || 0) + event.da;
-
-    //     target.style.transform = `translate(${event.target.style.transform}) rotate(${rotation}deg)`;
-    //     target.setAttribute("data-rotation", rotation);
-    //   },
-    // });
-  </script>
 </html>
