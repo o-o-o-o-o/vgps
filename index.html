@@ -30,6 +30,16 @@
       /* overflow: hidden; */
     }
 
+    main {
+      scroll-snap-type: y mandatory;
+      height: 100vh;
+      overflow: scroll;
+    }
+
+    section {
+      scroll-snap-align: start;
+    }
+
     .bg-grey {
       background-color: #969696;
     }
@@ -81,16 +91,18 @@
     }
   </style>
   <body>
-    <div
+    <main>
+      <section
       id="title"
-      class="pa3 near-white vw-100 vh-100 flex items-center justify-around"
+        class="pa3 near-white vw-100 vh-100 flex flex-row-ns flex-column items-center justify-around"
     >
-      <div>Varese</div>
-      <div>Group</div>
-      <div>Pamphlet</div>
-      <div>Series</div>
-    </div>
-    <div class="vh-100 vw-100 bg-grey pa5 near-white flex items-center">
+        <div>Varese Group</div>
+        <div>Pamphlet Series</div>
+      </section>
+      <section
+        id="release"
+        class="vh-100 vw-100 bg-grey pa5 near-white flex items-center"
+      >
       <div>
         <div class="ml5">
           <p>Release 1</p>
@@ -106,18 +118,18 @@
           <div class="w-25 mh3"><img src="imgs/asterisk.png" alt="" /></div>
         </div>
       </div>
-    </div>
-    <div id="about" class="frosted min-vh-100 vw-100 pa4 near-white">
+      </section>
+      <section id="about" class="frosted min-vh-100 vw-100 pa4 near-white">
       <div>
-        <p class="mt0 ml4 ttu">Varese Group Pamphlet Series</p>
+          <p class="mt0 mb4 ml4 ttu">Varese Group Pamphlet Series</p>
         <p>
           <span
-            >Varese Group convened for the first time in 2017 when Fiona Connor
-            invited a small group of artists, writers, architects, curators, and
-            designers to meet in northern Italy, with a gentle commitment to
-            keep coming back in the following years. For three consecutive
-            summers we spent a full, unhurried week together, with each
-            participant gently taking responsibility for an event or
+              >Varese Group convened for the first time in 2017 when Fiona
+              Connor invited a small group of artists, writers, architects,
+              curators, and designers to meet in northern Italy, with a gentle
+              commitment to keep coming back in the following years. For three
+              consecutive summers we spent a full, unhurried week together, with
+              each participant gently taking responsibility for an event or
             presentation: giving a talk or slide show, presenting artwork,
             leading a field trip. Common interests included a fascination with
             place, site, and temporality; a commitment to institutional
@@ -129,33 +141,33 @@
             individuals fell in love; coincidences unfolded. One year a baby
             attended, and we all discovered the meaning of tummy time. The
             participants came from Los Angeles, Auckland, Berlin, New York,
-            Lisbon, Glasgow, various cities in Italy, and elsewhere. In time, a
-            series of programs took place in Los Angeles, and during the
-            pandemic, a fourth iteration of Varese Group came together remotely,
-            with old and new participants spanning multiple countries and time
-            zones.</span
+              Lisbon, Glasgow, various cities in Italy, and elsewhere. In time,
+              a series of programs took place in Los Angeles, and during the
+              pandemic, a fourth iteration of Varese Group came together
+              remotely, with old and new participants spanning multiple
+              countries and time zones.</span
           >
         </p>
         <p>
           <span
             >The Varese Group Pamphlet Series was initiated as a way for the
-            group to share threads of research and output with a broader public.
-            Pamphlets are published in series, with the first set of three by
-            Leslie Dick, Michael Ned Holte, and Warren Olds, [to be?] followed
-            by a second set by Marta Fontolan, Sasha Portis, and Lucy
+              group to share threads of research and output with a broader
+              public. Pamphlets are published in series, with the first set of
+              three by Leslie Dick, Michael Ned Holte, and Warren Olds, [to be?]
+              followed by a second set by Marta Fontolan, Sasha Portis, and Lucy
             Skaer.</span
           >
         </p>
 
         <p>
           <span
-            >The pamphlets are Risograph-printed in black on 70 lb. White Cougar
-            paper, and staple-bound in quarto signatures.
+              >The pamphlets are Risograph-printed in black on 70 lb. White
+              Cougar paper, and staple-bound in quarto signatures.
           </span>
         </p>
       </div>
       <div class="col-break">
-        <p class="mt0 ml4 ttu">Now Available</p>
+          <p class="mt0 ml4 ttu mb4">Now Available</p>
         <p class="num-indent ml4">
           <strong
             ><span
@@ -181,8 +193,8 @@
           ><em><span>a dangerous luxury</span></em
           ><span
             >, invoking the compulsive pleasures that accompany the dissolving
-            of distinctions between self and other. Ignoring Darwin’s theory of
-            evolution, this poetic proposition implicitly links mimicry to
+              of distinctions between self and other. Ignoring Darwin’s theory
+              of evolution, this poetic proposition implicitly links mimicry to
             Freud’s idea of the death drive. In his later writing on play and
             games, Caillois outlined four fundamental structures of play that
             may prove useful in thinking about other human practices, such as
@@ -190,8 +202,8 @@
             disorientation, such as children spinning in circles or the
             experience of thrill rides at the fair, recalls our contemporary
             experience within the digital realm, where the erasure of distinct
-            boundaries and locations imparts an echo of our eventual demise. 16
-            pages.</span
+              boundaries and locations imparts an echo of our eventual demise.
+              16 pages.</span
           >
         </p>
         <p class="ml4 num-indent">
@@ -201,18 +213,19 @@
           <em><span>Bog Time</span></em
           ><span>
             considers the electronic music of Pauline Oliveros circa 1966-67,
-            coinciding with her time as the inaugural director of the Tape Music
-            Center at Mills College in Oakland, California. An inventor of
-            pioneering tape delay techniques, Oliveros began to explore the
+              coinciding with her time as the inaugural director of the Tape
+              Music Center at Mills College in Oakland, California. An inventor
+              of pioneering tape delay techniques, Oliveros began to explore the
             possibilities of the Buchla synthesizer in the electronic music
             studio at Mills, with the window open to the “bog”–really, a pond–
             below. Soon after, she presented a 12-hour “Tape-athon” before
             leaving Mills and the Bay Area for a teaching position at UC San
-            Diego. In this new context, she would develop her influential “Sonic
-            Meditations” and the mandala-based scores that are the foundation of
-            her eventual Deep Listening philosophy. This pamphlet focuses
-            attention on an important moment of transition for Oliveros, both
-            personally and musically. Drawings by Ruoyi Shi. 32 pages.
+              Diego. In this new context, she would develop her influential
+              “Sonic Meditations” and the mandala-based scores that are the
+              foundation of her eventual Deep Listening philosophy. This
+              pamphlet focuses attention on an important moment of transition
+              for Oliveros, both personally and musically. Drawings by Ruoyi
+              Shi. 32 pages.
           </span>
         </p>
         <p class="ml4 num-indent">
@@ -220,27 +233,28 @@
         </p>
         <p class="ml4">
           <span
-            >Bob Bemer invented Y2K. In his work as a computer scientist he also
-            proposed the escape (ESC) character be included in the new ASCII
-            standard when it was developed in 1960 to help standardize
+              >Bob Bemer invented Y2K. In his work as a computer scientist he
+              also proposed the escape (ESC) character be included in the new
+              ASCII standard when it was developed in 1960 to help standardize
             electronic communications. In modern keyboard-use the ESC key is
-            generally mapped to some form of interrupt: no, quit, cancel, stop,
-            or abort. In 1960 computer interfaces were still keyboard-only and
-            Bemer formalized the idea that an escape key could signal a switch
-            of modes, from language to instruction – that subsequent characters
-            entered were to be interpreted and not displayed. It allowed for an
-            expansion of the alphabet present on the keyboard, giving space for
-            individual letters to also embody actions. *ESC** reproduces a
-            selection of asterisk forms cut from medium-density fibreboard (MDF)
-            and printed (on paper) by participants at an April 11, 2021 Varese
-            Group workshop in Oratia, Aotearoa New Zealand. These works
-            illustrate a short text by Olds exploring the magic of the asterisk
-            and some of its contemporary applications. 16 pages.</span
+              generally mapped to some form of interrupt: no, quit, cancel,
+              stop, or abort. In 1960 computer interfaces were still
+              keyboard-only and Bemer formalized the idea that an escape key
+              could signal a switch of modes, from language to instruction –
+              that subsequent characters entered were to be interpreted and not
+              displayed. It allowed for an expansion of the alphabet present on
+              the keyboard, giving space for individual letters to also embody
+              actions. *ESC** reproduces a selection of asterisk forms cut from
+              medium-density fibreboard (MDF) and printed (on paper) by
+              participants at an April 11, 2021 Varese Group workshop in Oratia,
+              Aotearoa New Zealand. These works illustrate a short text by Olds
+              exploring the magic of the asterisk and some of its contemporary
+              applications. 16 pages.</span
           >
         </p>
       </div>
       <div class="col-break">
-        <p class="mv0">
+          <p class="mv0 mb4">
           <span>Series editors: Fiona Connor, Michael Ned Holte</span>
         </p>
         <p class="mv0">
@@ -250,11 +264,13 @@
         <p class="mv0"><span>Print: Neko Natalia</span></p>
         <p class="mv0">
           <span
-            >Published by June 20th, Los Angeles and Ōtautahi Christchurch</span
+              >Published by June 20th, Los Angeles and Ōtautahi
+              Christchurch</span
           >
         </p>
       </div>
-    </div>
+      </section>
+    </main>
     <div class="video-container">
       <video id="background-video" autoplay muted loop>
         <source src="imgs/test2.mp4" type="video/mp4" />
