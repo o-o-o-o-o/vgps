@@ -68,17 +68,30 @@
       }
     }
 
-    div#title {
+    section#title {
       font-size: 4.5rem;
       letter-spacing: -0.01em;
     }
 
-    div#about {
+    section#title div {
+      /* spacing between title words */
+      word-spacing: 2vw;
+    }
+
+    @media only screen and (max-width: 48em) {
+      /* sm */
+
+      section#title {
+        font-size: 2.25rem;
+      }
+    }
+
+    section#about {
       columns: 3;
       gap: 4rem;
     }
 
-    div#about p {
+    section#about p {
       line-height: 1.3;
       letter-spacing: 0.01em;
     }
@@ -93,9 +106,9 @@
   <body>
     <main>
       <section
-      id="title"
+        id="title"
         class="pa3 near-white vw-100 vh-100 flex flex-row-ns flex-column items-center justify-around"
-    >
+      >
         <div>Varese Group</div>
         <div>Pamphlet Series</div>
       </section>
@@ -103,140 +116,140 @@
         id="release"
         class="vh-100 vw-100 bg-grey pa5 near-white flex items-center"
       >
-      <div>
-        <div class="ml5">
-          <p>Release 1</p>
-          Left to Right, <br />
-          Leslie Dick: Voluptuous Panic / Digital Whirlpool / Digital Panic /
-          Voluptuous Whirlpool; Michael Ned Holte: Bog Time; Warren Olds: ESC*
-        </div>
-        <div class="flex flex-wrap-ns justify-around mt5">
-          <div class="w-25-ns w-100 mh3">
-            <img src="imgs/voluptuouspanic.png" alt="" />
+        <div>
+          <div class="ml5">
+            <p>Release 1</p>
+            Left to Right, <br />
+            Leslie Dick: Voluptuous Panic / Digital Whirlpool / Digital Panic /
+            Voluptuous Whirlpool; Michael Ned Holte: Bog Time; Warren Olds: ESC*
           </div>
-          <div class="w-25 mh3"><img src="imgs/mill.png" alt="" /></div>
-          <div class="w-25 mh3"><img src="imgs/asterisk.png" alt="" /></div>
+          <div class="flex flex-wrap-ns justify-around mt5">
+            <div class="w-25-ns w-100 mh3">
+              <img src="imgs/voluptuouspanic.png" alt="" />
+            </div>
+            <div class="w-25 mh3"><img src="imgs/mill.png" alt="" /></div>
+            <div class="w-25 mh3"><img src="imgs/asterisk.png" alt="" /></div>
+          </div>
         </div>
-      </div>
       </section>
       <section id="about" class="frosted min-vh-100 vw-100 pa4 near-white">
-      <div>
+        <div>
           <p class="mt0 mb4 ml4 ttu">Varese Group Pamphlet Series</p>
-        <p>
-          <span
+          <p>
+            <span
               >Varese Group convened for the first time in 2017 when Fiona
               Connor invited a small group of artists, writers, architects,
               curators, and designers to meet in northern Italy, with a gentle
               commitment to keep coming back in the following years. For three
               consecutive summers we spent a full, unhurried week together, with
               each participant gently taking responsibility for an event or
-            presentation: giving a talk or slide show, presenting artwork,
-            leading a field trip. Common interests included a fascination with
-            place, site, and temporality; a commitment to institutional
-            critique; and a desire to delve into the histories of architecture
-            and exhibition design. The materiality of a specific location was
-            central to these concerns. We made food together, went on long
-            walks, and discovered overlapping interests and intersecting
-            histories. We made new friends and indulged old ones; certain
-            individuals fell in love; coincidences unfolded. One year a baby
-            attended, and we all discovered the meaning of tummy time. The
-            participants came from Los Angeles, Auckland, Berlin, New York,
+              presentation: giving a talk or slide show, presenting artwork,
+              leading a field trip. Common interests included a fascination with
+              place, site, and temporality; a commitment to institutional
+              critique; and a desire to delve into the histories of architecture
+              and exhibition design. The materiality of a specific location was
+              central to these concerns. We made food together, went on long
+              walks, and discovered overlapping interests and intersecting
+              histories. We made new friends and indulged old ones; certain
+              individuals fell in love; coincidences unfolded. One year a baby
+              attended, and we all discovered the meaning of tummy time. The
+              participants came from Los Angeles, Auckland, Berlin, New York,
               Lisbon, Glasgow, various cities in Italy, and elsewhere. In time,
               a series of programs took place in Los Angeles, and during the
               pandemic, a fourth iteration of Varese Group came together
               remotely, with old and new participants spanning multiple
               countries and time zones.</span
-          >
-        </p>
-        <p>
-          <span
-            >The Varese Group Pamphlet Series was initiated as a way for the
+            >
+          </p>
+          <p>
+            <span
+              >The Varese Group Pamphlet Series was initiated as a way for the
               group to share threads of research and output with a broader
               public. Pamphlets are published in series, with the first set of
               three by Leslie Dick, Michael Ned Holte, and Warren Olds, [to be?]
               followed by a second set by Marta Fontolan, Sasha Portis, and Lucy
-            Skaer.</span
-          >
-        </p>
+              Skaer.</span
+            >
+          </p>
 
-        <p>
-          <span
+          <p>
+            <span
               >The pamphlets are Risograph-printed in black on 70 lb. White
               Cougar paper, and staple-bound in quarto signatures.
-          </span>
-        </p>
-      </div>
-      <div class="col-break">
+            </span>
+          </p>
+        </div>
+        <div class="col-break">
           <p class="mt0 ml4 ttu mb4">Now Available</p>
-        <p class="num-indent ml4">
-          <strong
+          <p class="num-indent ml4">
+            <strong
+              ><span
+                >1. Leslie Dick: Voluptuous Panic / Digital Whirlpool / Digital
+                Panic / Voluptuous Whirlpool</span
+              ></strong
+            >
+          </p>
+          <p class="ml4">
+            <em><span>Voluptuous Panic/Digital Whirlpool</span></em
+            ><span>
+              engages the work of Roger Caillois (1913-1978), in particular his
+              extraordinary essay on mimicry, first published in the Surrealist
+              journal </span
+            ><em><span>Minotaure</span></em
+            ><span>
+              in 1935, where Caillois argues that insects and other animals who
+              practice camouflage are not primarily motivated by a wish to
+              survive. Whether through imitating less vulnerable creatures (such
+              as butterflies with wings patterned in shapes that resemble large
+              eyes) or disappearing into their environment to the point of
+              invisibility, Caillois sees such mimicry as a luxury, even </span
+            ><em><span>a dangerous luxury</span></em
             ><span
-              >1. Leslie Dick: Voluptuous Panic / Digital Whirlpool / Digital
-              Panic / Voluptuous Whirlpool</span
-            ></strong
-          >
-        </p>
-        <p class="ml4">
-          <em><span>Voluptuous Panic/Digital Whirlpool</span></em
-          ><span>
-            engages the work of Roger Caillois (1913-1978), in particular his
-            extraordinary essay on mimicry, first published in the Surrealist
-            journal </span
-          ><em><span>Minotaure</span></em
-          ><span>
-            in 1935, where Caillois argues that insects and other animals who
-            practice camouflage are not primarily motivated by a wish to
-            survive. Whether through imitating less vulnerable creatures (such
-            as butterflies with wings patterned in shapes that resemble large
-            eyes) or disappearing into their environment to the point of
-            invisibility, Caillois sees such mimicry as a luxury, even </span
-          ><em><span>a dangerous luxury</span></em
-          ><span
-            >, invoking the compulsive pleasures that accompany the dissolving
+              >, invoking the compulsive pleasures that accompany the dissolving
               of distinctions between self and other. Ignoring Darwin’s theory
               of evolution, this poetic proposition implicitly links mimicry to
-            Freud’s idea of the death drive. In his later writing on play and
-            games, Caillois outlined four fundamental structures of play that
-            may prove useful in thinking about other human practices, such as
-            art. In particular, his description of the delights of
-            disorientation, such as children spinning in circles or the
-            experience of thrill rides at the fair, recalls our contemporary
-            experience within the digital realm, where the erasure of distinct
+              Freud’s idea of the death drive. In his later writing on play and
+              games, Caillois outlined four fundamental structures of play that
+              may prove useful in thinking about other human practices, such as
+              art. In particular, his description of the delights of
+              disorientation, such as children spinning in circles or the
+              experience of thrill rides at the fair, recalls our contemporary
+              experience within the digital realm, where the erasure of distinct
               boundaries and locations imparts an echo of our eventual demise.
               16 pages.</span
-          >
-        </p>
-        <p class="ml4 num-indent">
-          <strong><span>2. Michael Ned Holte: Bog Time </span></strong>
-        </p>
-        <p class="ml4">
-          <em><span>Bog Time</span></em
-          ><span>
-            considers the electronic music of Pauline Oliveros circa 1966-67,
+            >
+          </p>
+          <p class="ml4 num-indent">
+            <strong><span>2. Michael Ned Holte: Bog Time </span></strong>
+          </p>
+          <p class="ml4">
+            <em><span>Bog Time</span></em
+            ><span>
+              considers the electronic music of Pauline Oliveros circa 1966-67,
               coinciding with her time as the inaugural director of the Tape
               Music Center at Mills College in Oakland, California. An inventor
               of pioneering tape delay techniques, Oliveros began to explore the
-            possibilities of the Buchla synthesizer in the electronic music
-            studio at Mills, with the window open to the “bog”–really, a pond–
-            below. Soon after, she presented a 12-hour “Tape-athon” before
-            leaving Mills and the Bay Area for a teaching position at UC San
+              possibilities of the Buchla synthesizer in the electronic music
+              studio at Mills, with the window open to the “bog”–really, a pond–
+              below. Soon after, she presented a 12-hour “Tape-athon” before
+              leaving Mills and the Bay Area for a teaching position at UC San
               Diego. In this new context, she would develop her influential
               “Sonic Meditations” and the mandala-based scores that are the
               foundation of her eventual Deep Listening philosophy. This
               pamphlet focuses attention on an important moment of transition
               for Oliveros, both personally and musically. Drawings by Ruoyi
               Shi. 32 pages.
-          </span>
-        </p>
-        <p class="ml4 num-indent">
-          <strong><span>3. Warren Olds: ESC</span><span>*</span></strong>
-        </p>
-        <p class="ml4">
-          <span
+            </span>
+          </p>
+          <p class="ml4 num-indent">
+            <strong><span>3. Warren Olds: ESC</span><span>*</span></strong>
+          </p>
+          <p class="ml4">
+            <span
               >Bob Bemer invented Y2K. In his work as a computer scientist he
               also proposed the escape (ESC) character be included in the new
               ASCII standard when it was developed in 1960 to help standardize
-            electronic communications. In modern keyboard-use the ESC key is
+              electronic communications. In modern keyboard-use the ESC key is
               generally mapped to some form of interrupt: no, quit, cancel,
               stop, or abort. In 1960 computer interfaces were still
               keyboard-only and Bemer formalized the idea that an escape key
@@ -250,25 +263,25 @@
               Aotearoa New Zealand. These works illustrate a short text by Olds
               exploring the magic of the asterisk and some of its contemporary
               applications. 16 pages.</span
-          >
-        </p>
-      </div>
-      <div class="col-break">
+            >
+          </p>
+        </div>
+        <div class="col-break">
           <p class="mv0 mb4">
-          <span>Series editors: Fiona Connor, Michael Ned Holte</span>
-        </p>
-        <p class="mv0">
-          <span>Copy editors: Leslie Dick, Gwynneth Porter</span>
-        </p>
-        <p class="mv0"><span>Design: Warren Olds</span></p>
-        <p class="mv0"><span>Print: Neko Natalia</span></p>
-        <p class="mv0">
-          <span
+            <span>Series editors: Fiona Connor, Michael Ned Holte</span>
+          </p>
+          <p class="mv0">
+            <span>Copy editors: Leslie Dick, Gwynneth Porter</span>
+          </p>
+          <p class="mv0"><span>Design: Warren Olds</span></p>
+          <p class="mv0"><span>Print: Neko Natalia</span></p>
+          <p class="mv0">
+            <span
               >Published by June 20th, Los Angeles and Ōtautahi
               Christchurch</span
-          >
-        </p>
-      </div>
+            >
+          </p>
+        </div>
       </section>
     </main>
     <div class="video-container">
