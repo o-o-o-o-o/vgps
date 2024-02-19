@@ -8,8 +8,6 @@
       rel="stylesheet"
       href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
     />
-
-    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js"></script>
   </head>
   <style>
     @font-face {
@@ -109,6 +107,19 @@
     .num-indent {
       text-indent: -1em;
     }
+
+    .sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+
+    @media only screen and (max-width: 48em) {
+      /* sm */
+      .sticky {
+        position: static;
+      }
+    }
   </style>
   <body>
     <main>
@@ -116,8 +127,8 @@
         id="title"
         class="pa3 near-white vw-100 vh-100 flex flex-row-ns flex-column items-center justify-around"
       >
-        <div>Varese Group</div>
-        <div>Pamphlet Series</div>
+        <div class="sticky">Varese Group</div>
+        <div class="sticky">Pamphlet Series</div>
       </section>
       <section
         id="release"
@@ -144,7 +155,7 @@
         </div>
       </section>
       <section id="about" class="frosted min-vh-100 vw-100 pa4 near-white">
-        <div class="mb0-ns mb4">
+        <div class="mb0-ns mb4 mw6">
           <p class="mt0 mb4 ml4 ttu">
             <span>Varese Group</span>
             <span class="di-ns db">Pamphlet Series</span>
@@ -193,7 +204,7 @@
             </span>
           </p>
         </div>
-        <div class="col-break">
+        <div class="col-break mw6">
           <p class="mt0 ml4 ttu mb4">Now Available</p>
           <p class="num-indent ml4">
             <strong
@@ -280,7 +291,7 @@
             >
           </p>
         </div>
-        <div class="col-break">
+        <div class="col-break mw6">
           <p class="mv0 mb4">
             <span>Series editors: Fiona Connor, Michael Ned Holte</span>
           </p>
@@ -299,7 +310,7 @@
       </section>
     </main>
     <div class="video-container">
-      <video id="background-video" autoplay muted loop>
+      <video id="background-video" autoplay muted loop playsinline>
         <source src="imgs/test2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
