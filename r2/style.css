@@ -84,7 +84,7 @@ main.home {
       scroll-snap-type: y mandatory;
 
      /* overflow-x: scroll;*/
-      backdrop-filter: /*saturate(180%)*/ blur(60px);
+      backdrop-filter: /*saturate(180%)*/ blur(100px);
       padding: 30px 100px 200px 100px;
     }
 
@@ -130,8 +130,8 @@ main.home {
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
       .frosted {
         background: rgba(19, 17, 17, 0.01);
-        -webkit-backdrop-filter: /*saturate(180%)*/ blur(60px);
-        backdrop-filter: /*saturate(180%)*/ blur(60px);
+        -webkit-backdrop-filter: /*saturate(180%)*/ blur(100px);
+        backdrop-filter: /*saturate(180%)*/ blur(100px);
       }
     }
 
